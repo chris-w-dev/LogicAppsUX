@@ -40,7 +40,7 @@ export async function validateDotNetIsInstalled(context: IActionContext, fsPath:
         await installDotNet(innerContext);
         installed = true;
       } else if (input === DialogResponses.learnMore) {
-        await openUrl('https://dotnet.microsoft.com/download/dotnet/6.0');
+        await openUrl('https://dotnet.microsoft.com/download/dotnet/8.0');
       }
     }
   });
@@ -53,7 +53,7 @@ export async function validateDotNetIsInstalled(context: IActionContext, fsPath:
         DialogResponses.learnMore
       )) === DialogResponses.learnMore
     ) {
-      await openUrl('https://dotnet.microsoft.com/download/dotnet/6.0');
+      await openUrl('https://dotnet.microsoft.com/download/dotnet/8.0');
     }
   }
 
