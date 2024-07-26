@@ -25,7 +25,7 @@ export class ScriptInitVSCodeStep extends InitVSCodeStepBase {
       ? {
           options: {
             env: {
-              PATH: '${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\NodeJs;${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\DotNetSDK;$env:PATH',
+              PATH: '${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\NodeJs;${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\DotNetSDK;${env:PATH}',
             },
           },
         }

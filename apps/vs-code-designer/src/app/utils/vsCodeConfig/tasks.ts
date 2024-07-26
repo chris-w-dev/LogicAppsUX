@@ -230,7 +230,7 @@ async function overwriteTasksJson(context: IActionContext, projectPath: string):
             options: {
               cwd: debugSubpath,
               env: {
-                PATH: '${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\\\NodeJs;${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\\\DotNetSDK;$env:PATH',
+                PATH: '${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\\\NodeJs;${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\\\DotNetSDK;${env:PATH}',
               },
             },
             problemMatcher: '$func-watch',
@@ -263,7 +263,7 @@ async function overwriteTasksJson(context: IActionContext, projectPath: string):
             args: ['host', 'start'],
             options: {
               env: {
-                PATH: '${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\\\NodeJs;${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\\\DotNetSDK;$env:PATH',
+                PATH: '${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\\\NodeJs;${config:azureLogicAppsStandard.autoRuntimeDependenciesPath}\\\\DotNetSDK;${env:PATH}',
               },
             },
             problemMatcher: '$func-watch',
