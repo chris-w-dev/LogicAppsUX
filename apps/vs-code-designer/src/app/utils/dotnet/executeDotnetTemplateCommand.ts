@@ -134,7 +134,7 @@ export async function getFramework(context: IActionContext, workingDirectory: st
       throw new Error(
         localize(
           'noMatchingFramework',
-          'You must have the [.NET Core SDK](https://aka.ms/AA4ac70) installed to perform this operation. See [here](https://aka.ms/AA1tpij) for supported versions.'
+          'You must have the [.NET SDK](https://aka.ms/AA4ac70) installed to perform this operation. See [here](https://aka.ms/AA1tpij) for supported versions.'
         )
       );
     }

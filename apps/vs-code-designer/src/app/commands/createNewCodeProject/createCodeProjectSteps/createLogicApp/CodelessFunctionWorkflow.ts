@@ -44,7 +44,7 @@ export class CodelessFunctionWorkflow extends WorkflowCreateStepBase<IFunctionWi
 
   // Static method that creates a new instance of the CodelessFunctionProjectWorkflowCreateStep class and returns it
   public static async createStep(context: IFunctionWizardContext): Promise<CodelessFunctionWorkflow> {
-    // Ensure that the .NET Core SDK is installed on the user's machine
+    // Ensure that the .NET SDK is installed on the user's machine
     const projectPath = nonNullProp(context, 'logicAppFolderPath');
     const isDotNetInstalled = await validateDotNetIsInstalled(context, projectPath);
     if (!isDotNetInstalled) {
